@@ -1,0 +1,192 @@
+/*Fonte*/
+
+@font-face {
+    font-family: russia;
+    src: url('fonts/kremlin-webfont.woff2')
+}
+
+/*Header*/
+
+#splash {
+    background-color: #DA291C;
+    width: 100%;
+    height: 200px;
+    display: flex;
+}
+
+#splash h1 {
+    color: #fcd30f;
+    font-family: russia;
+    padding-left: 20px;
+}
+
+#hammersegl {
+    background-image: url('imgs/hammersicle.png');
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+#menu {
+    align-self: center;
+    margin-bottom: 15px;
+}
+
+.buttonClicked {
+    color: #DA291C;
+}
+
+/*Body*/
+
+body {
+    margin: 0;
+}
+
+
+#listContainer {
+    background-color: white;
+    border-color: brown;
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 70px;
+}
+
+img {
+    display: flex;
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+}
+
+#listSection {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    max-width: 1700px;
+    grid-gap: 20px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+p,
+h2 {
+    color: darkred;
+
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#popup {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .8);
+    top: 0;
+    position: fixed;
+    display: none;
+
+}
+
+#contentArea {
+    background-color: white;
+    width: 75vw;
+    max-height: 75vh;
+    position: fixed;
+    top: 12.5vh;
+    left: 12.5vw;
+    border-radius: 0.1%;
+    display: flex;
+    flex-direction: column;
+}
+
+#contentArea h2 {
+    align-self: flex-start;
+    color: #191919;
+    padding: 30px;
+}
+
+#luk {
+    align-self: flex-end;
+    margin-right: 1vh;
+    font-size: 200%;
+    color: red;
+}
+
+#contentArea p {
+    font-weight: bold;
+    margin-right: 30px;
+    color: black;
+    align-self: flex-end;
+}
+
+span {
+    font-size: 110%;
+    font-weight: normal;
+}
+
+#retDetaljer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+
+#detaljeTekst {
+    flex-direction: column;
+}
+
+#contentArea img {
+    max-height: 60vh;
+    max-width: 50vw;
+    padding-right: 30px;
+}
+
+/*Footer*/
+
+#footer {
+    width: 100%;
+    height: 200px;
+    background-color: #DA291C;
+}
+
+/*Media Quarry*/
+
+@media (max-width: 774px) {
+    #menu {
+        align-self: flex-start;
+        margin-left: 10vw;
+    }
+
+    #splash h1 {
+        font-size: 40px;
+    }
+
+    #splash {
+        justify-content: space-around;
+    }
+}
+
+
+@media (min-width: 700px) {
+    #retDetaljer {
+        flex-direction: row;
+        margin: 0;
+        padding: 0px;
+    }
+}
+
+@media (min-width: 1175px) {
+    #splash h1 {
+        font-size: 80px;
+    }
